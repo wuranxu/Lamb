@@ -1,2 +1,3 @@
 logbook
 flask
+flask-sqlalchemy
