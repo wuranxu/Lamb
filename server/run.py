@@ -1,10 +1,10 @@
 __auth__ = "woody"
 
-from server.app import app
+from app import app
 
 
 # 导入各个模块
-from server.app.views.auth.User import user
+from app.views.auth.User import user
 app.register_blueprint(user)
 
 if __name__ == '__main__':

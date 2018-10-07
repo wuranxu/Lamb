@@ -7,7 +7,12 @@ user = Blueprint("user", __name__, url_prefix="/user")
 
 @user.route("/register")
 def register():
-    return jsonify(dict(status=True, msg="注册成功"))
+    return jsonify({
+"id": 26,
+"type": "programming",
+"setup": "If you put a million monkeys at a million keyboards, one of them will eventually write a Java program",
+"punchline": "the rest of them will write Perl"
+})
 
 @user.route("/login")
 def login():
